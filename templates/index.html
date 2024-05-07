@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linear Regression Prediction</title>
+</head>
+<body>
+    <h1>Linear Regression Prediction</h1>
+    <p>Enter input data to predict the output.</p>
+    <form method="POST" action="/predict">
+        <label for="input_data">Enter input data:</label><br>
+        <input type="text" id="input_data" name="input_data"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    {{Prediction_text}}
+</body>
+</html>

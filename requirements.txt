@@ -1,0 +1,9 @@
+numpy 
+scikit-learn
+
+pandas 
+matplotlib
+joblib
+flask
+gunicorn
+dvc

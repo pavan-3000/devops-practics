@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  # Unique key of the Deployment instance
+  name: my-app
+spec:
+  # 3 Pods should exist at all times.
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        # Apply this label to pods and default
+        # the Deployment label selector to this value
+        app: my-app
+    spec:
+      containers:
+      - name: nginx
+        # Run this image
+        image: pav30/ml-demo
